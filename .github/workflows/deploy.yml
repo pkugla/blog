@@ -45,6 +45,8 @@ jobs:
             --region ${{ secrets.AWS_REGION }} \
             --delete \
             --cache-control=no-cache,no-store,must-revalidate \
+            --metadata-directive REPLACE \
+            --acl bucket-owner-full-control
           
       # 7. Invalidate CloudFront cache
       - name: Invalidate CloudFront cache
