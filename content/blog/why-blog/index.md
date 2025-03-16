@@ -32,5 +32,5 @@ In other words, it's the easiest, cleanest solution that ticks all the boxes. Wh
 > 
 > -- <cite>Edsger W. Dijkstra</cite>
 
-The blog's code can be found on [GitHub](). This may be useful if you want to see how the blog is designed, or if you 
+The blog's code can be found on [GitHub](https://github.com/Patraiku/blog). This may be useful if you want to see how the blog is designed, or if you 
 want to snoop on how many times I needed to fix typos in each article.
