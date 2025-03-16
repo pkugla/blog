@@ -14,7 +14,7 @@ This blog exists primarily to document that journey. I want to show the stuff I'
 things I find interesting, and show my authentic self.
 
 To keep to the last point, none of the content of the blog is AI-generated. 
-While I'm optimistic about the opportunities of AI, I wouldn't want my humanity to get lost in a sea of ['valuable insights' and 'new avenues'](https://gptzero.me/ai-vocabulary). 
+While I'm optimistic about AI, I wouldn't want my humanity to get lost in a sea of ['valuable insights' and 'new avenues'](https://gptzero.me/ai-vocabulary). 
 
 Hopefully this blog will give you an insight into how I tackle problems and the technologies my mind drifts 
 towards. Some of you may even find it enjoyable to read (no guarantees though)!
@@ -32,5 +32,6 @@ In other words, it's the easiest, cleanest solution that ticks all the boxes. Wh
 > 
 > -- <cite>Edsger W. Dijkstra</cite>
 
-The blog's code can be found on [GitHub](https://github.com/Patraiku/blog). This may be useful if you want to see how the blog is designed, or if you 
-want to snoop on how many times I needed to fix typos in each article.
+The blog's code can be found on [GitHub](https://github.com/Patraiku/blog) (including the GitHub Actions code responsible 
+for deploying the site). This may be useful if you want to see how the blog is designed, or if you want to snoop on how 
+many times I needed to fix typos in each article.
