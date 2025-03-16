@@ -29,14 +29,27 @@ jobs:
       - name: Build Gatsby
         run: npm run build
 
-      # 5. Deploy to S3
-      # IAM User has the least privileges possible to use s3-deploy@v4
-      - name: Deploy to S3
-        uses: reggionick/s3-deploy@v4
+      # 5. Set up AWS credentials
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
         with:
-          folder: 'public'
-          bucket: ${{ secrets.S3_BUCKET }}
-          bucket-region: ${{ secrets.AWS_REGION }}
-          delete-removed: true
-          no-cache: true
-          files-to-include: '{.*/**,**}'
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      # 6. Deploy to S3
+      # IAM User has the least privileges possible to deploy to this S3 bucket & invalidate CF cache
+      - name: Deploy to S3
+        run: |
+          aws s3 sync public/ s3://${{ vars.S3_BUCKET }}/ \
+            --region ${{ vars.AWS_REGION }} \
+            --delete \
+            --cache-control=no-cache,no-store,must-revalidate \
+            --acl private
+          
+      # 7. Invalidate CloudFront cache
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*"
