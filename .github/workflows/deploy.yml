@@ -35,7 +35,7 @@ jobs:
         uses: reggionick/s3-deploy@v4
         with:
           folder: 'public'
-          bucket: ${{ secrets.AWS_S3_BUCKET }}
+          bucket: ${{ secrets.S3_BUCKET }}
           bucket-region: ${{ secrets.AWS_REGION }}
           delete-removed: true
           no-cache: true
