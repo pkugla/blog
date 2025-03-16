@@ -45,7 +45,6 @@ jobs:
             --region ${{ secrets.AWS_REGION }} \
             --delete \
             --cache-control=no-cache,no-store,must-revalidate \
-            --acl private
           
       # 7. Invalidate CloudFront cache
       - name: Invalidate CloudFront cache
