@@ -41,8 +41,8 @@ jobs:
       # IAM User has the least privileges possible to deploy to this S3 bucket & invalidate CF cache
       - name: Deploy to S3
         run: |
-          aws s3 sync public/ s3://${{ vars.S3_BUCKET }}/ \
-            --region ${{ vars.AWS_REGION }} \
+          aws s3 sync public/ s3://${{ secrets.S3_BUCKET }}/ \
+            --region ${{ secrets.AWS_REGION }} \
             --delete \
             --cache-control=no-cache,no-store,must-revalidate \
             --acl private
