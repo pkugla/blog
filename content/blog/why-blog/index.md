@@ -1,14 +1,13 @@
 ---
 title: Why blog?
 date: "2025-03-16T13:12:03.284Z"
-#description: "My motivation for starting this blog and a short discussion of its aims."
 description: "A short discussion of my motivations and aims, as well as an overview of the technology I'm using to host this blog."
 ---
 
 Welcome to my blog.
 
 After university, my path of development as a software engineer swiftly stopped being linear. Instead of picking modules, 
-I suddenly found myself on open pastures: free to pursue whatever technology I want, and study it however I desire.
+I suddenly found myself in open pastures: free to pursue whatever technology I want, and study it however I desire.
 
 This blog exists primarily to document that journey. I want to show the stuff I've been working on, share my thoughts about
 things I find interesting, and show my authentic self.
