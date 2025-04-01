@@ -1,7 +1,7 @@
 ---
 title: Introduction to Project Recall
 date: "2025-04-01T21:21:03.284Z"
-description: "A (mostly) non-technical overview of Recall, a personal AI memory companion I've built from scratch since September 2024."
+description: "A (mostly) non-technical overview of Recall, a personal AI memory companion I've been building from scratch since September 2024."
 ---
 
 Welcome to my blog.
