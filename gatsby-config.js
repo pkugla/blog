@@ -46,14 +46,7 @@ module.exports = {
               maxWidth: 630,
             },
           },
-          {
-            resolve: `gatsby-transformer-remark`,
-            options: {
-              plugins: [
-                `gatsby-remark-autolink-headers`,
-              ],
-            },
-          },
+          `gatsby-remark-autolink-headers`,
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
