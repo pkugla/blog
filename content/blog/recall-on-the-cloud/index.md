@@ -1,7 +1,7 @@
 ---
 title: Recall on the Cloud
 date: "2025-05-24T18:12:03.284Z"
-description: "Deepdive into the AWS architecture of Recall."
+description: "A deep dive into the AWS architecture of Recall."
 ---
 
 Welcome to my blog.
