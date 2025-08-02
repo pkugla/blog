@@ -12,7 +12,7 @@ module.exports = {
     title: `Kugla's Tech Blog`,
     author: {
       name: `Patryk Kugla`,
-      summary: `who's exploring what it means to be in tech in 2025.`,
+      summary: `who's exploring tech in 2025.`,
     },
     description: `A blog where I write my thoughts about tech.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
