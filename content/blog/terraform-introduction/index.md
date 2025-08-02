@@ -7,10 +7,7 @@ briefly introduces Terraform."
 
 Welcome to my blog.
 
-# Deploying simple infrastructure
-
-As I discussed in my [previous article](https://blog.kug.la/recall-on-the-cloud/), Recall is a cloud-native project,
-hosted on AWS. Arguably the simplest way to deploy resources on any Cloud is by using their online console.
+Arguably the simplest way to deploy resources on any Cloud is by using their online console.
 With that, we can deploy our storage, compute, or networks with just a few clicks. 
 
 This may be the right solution for a small project, where we don't need to manage complex cloud resources. Many years ago, 
